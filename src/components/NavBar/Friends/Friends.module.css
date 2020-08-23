@@ -1,0 +1,32 @@
+.friends{
+  margin-top: 50px;
+}
+.friends h2{
+  font-size: 28px;
+  color: rgb(119, 117, 13);
+}
+.friendsLinks{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.friend{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+.friend img{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.friend span{
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  text-transform: none;
+  margin-top: 10px;
+}

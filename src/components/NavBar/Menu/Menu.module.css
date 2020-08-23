@@ -1,0 +1,14 @@
+.menu{
+  display: flex;
+  flex-direction: column;
+}
+.menu a.active{
+  color: burlywood;
+}
+.menu a.activeMessages{
+  color: rgb(74, 202, 24);
+}
+.menu a:hover{
+  color: rgb(135, 185, 77);
+  transition: .3s
+}

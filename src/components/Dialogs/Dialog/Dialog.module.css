@@ -1,0 +1,8 @@
+.dialog{
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.dialog.active{
+    color: coral;
+}

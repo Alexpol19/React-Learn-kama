@@ -1,0 +1,13 @@
+.appWrapper{
+  background: rgb(221, 221, 221);
+}
+main{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px!important;
+}
+main .content {
+  flex: 0 0 73%;
+  max-width: 73%;
+  padding-left: 30px;
+}

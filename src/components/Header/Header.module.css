@@ -1,0 +1,13 @@
+header {
+    background: #456;
+}
+
+.header__line {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    height: 80px;
+    width: 80px;
+}
