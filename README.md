@@ -13,7 +13,7 @@ Password: free
 #### Take API Key from account settings,
 #### And put in a file src>api>api.js
 
-In the project directory, you can run:
+## In the project directory, you can run:
 
 ### `npm start`
 
