@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/css/main.c682a498.chunk.css",
+    "main.js": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/js/main.08c7e883.chunk.js",
+    "main.js.map": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/js/main.08c7e883.chunk.js.map",
+    "runtime-main.js": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/js/runtime-main.ba647188.js",
+    "runtime-main.js.map": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/js/runtime-main.ba647188.js.map",
+    "static/css/2.11829350.chunk.css": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/css/2.11829350.chunk.css",
+    "static/js/2.55c043aa.chunk.js": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/js/2.55c043aa.chunk.js",
+    "static/js/2.55c043aa.chunk.js.map": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/js/2.55c043aa.chunk.js.map",
+    "static/css/3.f87e9f44.chunk.css": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/css/3.f87e9f44.chunk.css",
+    "static/js/3.4f6cde96.chunk.js": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/js/3.4f6cde96.chunk.js",
+    "static/js/3.4f6cde96.chunk.js.map": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/js/3.4f6cde96.chunk.js.map",
+    "static/css/4.9e80e016.chunk.css": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/css/4.9e80e016.chunk.css",
+    "static/js/4.6eff34f3.chunk.js": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/js/4.6eff34f3.chunk.js",
+    "static/js/4.6eff34f3.chunk.js.map": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/js/4.6eff34f3.chunk.js.map",
+    "static/css/5.dca4967e.chunk.css": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/css/5.dca4967e.chunk.css",
+    "static/js/5.e61f98ea.chunk.js": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/js/5.e61f98ea.chunk.js",
+    "static/js/5.e61f98ea.chunk.js.map": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/js/5.e61f98ea.chunk.js.map",
+    "index.html": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/index.html",
+    "precache-manifest.3172c894065a818664fcce8850d38320.js": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/precache-manifest.3172c894065a818664fcce8850d38320.js",
+    "service-worker.js": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/service-worker.js",
+    "static/css/2.11829350.chunk.css.map": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/css/2.11829350.chunk.css.map",
+    "static/css/3.f87e9f44.chunk.css.map": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/css/3.f87e9f44.chunk.css.map",
+    "static/css/4.9e80e016.chunk.css.map": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/css/4.9e80e016.chunk.css.map",
+    "static/css/5.dca4967e.chunk.css.map": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/css/5.dca4967e.chunk.css.map",
+    "static/css/main.c682a498.chunk.css.map": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/css/main.c682a498.chunk.css.map",
+    "static/js/2.55c043aa.chunk.js.LICENSE.txt": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/js/2.55c043aa.chunk.js.LICENSE.txt",
+    "static/js/3.4f6cde96.chunk.js.LICENSE.txt": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/js/3.4f6cde96.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/Alexpol19/Alexpol19.github.io/React-Learn-kama/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ba647188.js",
+    "static/css/2.11829350.chunk.css",
+    "static/js/2.55c043aa.chunk.js",
+    "static/css/main.c682a498.chunk.css",
+    "static/js/main.08c7e883.chunk.js"
+  ]
+}
