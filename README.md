@@ -1,6 +1,6 @@
 # Learn project Social Network using React/Redux and related libraries
 
-<!-- You can see the [demo](https://alexpol19.github.io/React-Learn-kama/) -->
+<!-- You can see the [demo](https://alexpol19.github.io/React-Learn-kama/) 
 ### Test Login dates:
 
 Email: free@samuraijs.com
