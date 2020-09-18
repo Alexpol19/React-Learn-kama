@@ -1,32 +1,13 @@
 import * as serviceWorker from './serviceWorker';
-import store from './redux/store';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import { BrowserRouter } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import MainApp from './App';
 
-let rerenderAll= (state) => {
-  ReactDOM.render(
-      <BrowserRouter>
-        <App 
-            state={state} 
-            store={store}
-            // addPost={addPost} 
-            // onInputPostText={onInputPostText}
-            // addMessage={addMessage}
-            // onChangeMessageText={onChangeMessageText}
-             />
-      </BrowserRouter>,
-    document.getElementById('root')
-  );
-}
-
-store.subscribe(rerenderAll);
-
-rerenderAll(store.getState());
-// rerenderAll(state, addPost, onInputPostText, addMessage, onChangeMessageText);
-
+ReactDOM.render(<MainApp />,
+  document.getElementById('root')
+);
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA

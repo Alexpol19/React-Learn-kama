@@ -1,0 +1,34 @@
+.elemWrap{
+    position: relative;
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+label{
+    width: 20%;
+}
+.elemStyle{
+    width: 75%;
+    width: 80%;
+    border: 1px solid rgb(71, 71, 71, 0.5);
+    background-color: rgb(233, 233, 233);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.error{
+    position: absolute;
+    top: 0;
+    color: red;
+    top: 46px;
+    left: 21%;
+}
+.warning{
+    position: absolute;
+    top: 0;
+    color: yellow;
+    top: 46px;
+    left: 21%;
+}

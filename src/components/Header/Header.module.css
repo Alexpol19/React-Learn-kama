@@ -1,13 +1,32 @@
 header {
     background: #456;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .header__line {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    
 }
 
 header img {
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
+}
+header .login{
+    margin-top: 15px;
+    background-color: rgb(53, 130, 207);
+    padding: 5px 20px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+header .userName{
+    margin-right: 5px;
+    color: #fff;
+    letter-spacing: 1px;
 }

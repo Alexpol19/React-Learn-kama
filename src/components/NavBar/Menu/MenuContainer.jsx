@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Menu.module.css';
 import MenuItem from './MenuItem';
+import { connect } from 'react-redux';
 
 const Menu = (props) => {
     return(
@@ -11,4 +12,10 @@ const Menu = (props) => {
         </div>
     );
 }
-export default Menu;
+let mapStateToProps = (state) => {
+    return {
+        menu: state.navBar.menu
+    }
+}
+const MenuContainer = connect(mapStateToProps)(Menu);
+export default MenuContainer;

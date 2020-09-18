@@ -1,4 +1,5 @@
-// let rerender;
+import profileReducer from "./profileReducer";
+import chatReducer from "./chatReducer";
 
 let store={
     _callSubscriber(){
@@ -186,54 +187,18 @@ let store={
     getState(){
         return this._state;
     },
-    // methods for addPost on Profile page
-    onInputPostText(newPostText){
-        console.log(this);
-        this._state.profile.newPostText=newPostText;
-        this._callSubscriber(this._state);
-    },
-    addPost(){
-        let newPost={
-            id:3,
-            likeCount: 0,
-            description: this._state.profile.newPostText,
-            url: 'https://klike.net/uploads/posts/2019-05/1556777145_1.jpg'
-        }
-        this._state.profile.postsData.push(newPost);
-    
-        this.onInputPostText('')
-    },
-    // methods for addMessage on Messages Page
-    onChangeMessageText(newMessageText){
-        console.log(this)
-        this._state.chat.dialogsData[0].newMessageText=newMessageText;
-        
-        this._callSubscriber(this.getState());
-    },
-    addMessage(){
-        let newMessage={
-            id:5,
-            name: 'I',
-            messageText: this._state.chat.dialogsData[0].newMessageText,
-            url: 'http://lorempixel.com/75/75',
-            own: 1,
-        }
-        this._state.chat.dialogsData[0].messagesData.push(newMessage);
-    
-        this.onChangeMessageText('')
-    },
+   
     subscribe(observer){
         this._callSubscriber=observer;
     },
 
 
-    dispatch(){
-        
+    dispatch(action){ 
+        this._state.profile = profileReducer(this._state.profile, action);
+        this._state.chat = chatReducer(this._state.chat, action);
+
+        this._callSubscriber(this._state);
     }
 };
-
-// export const subscribe = (observer) =>{
-//     rerender=observer;
-// }
 
 export default store;

@@ -8,24 +8,16 @@
     text-align: left;
 }
 
-.posts__new {
+.posts__new form{
     margin-top: 10px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.posts__new input {
-    width: 100%;
-    border: 1px solid rgb(71, 71, 71, 0.5);
-    background-color: rgb(233, 233, 233);
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 18px;
+    align-items: center;
 }
 
 .posts__new button {
-    margin-top: 15px;
+    /* width: 20%; */
     background-color: rgb(53, 130, 207);
     padding: 10px 40px;
     border: none;

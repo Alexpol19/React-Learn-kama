@@ -1,18 +1,15 @@
 import React from 'react';
 import style from './Profile.module.css';
-import MyPosts from './MyPosts/MyPosts';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
+import MyPostsContainer from './MyPosts/MyPostsContainerPureFunction';
 
 const Profile = (props) => {
     
     return(
         <div>
-            <img src="http://lorempixel.com/1000/500" />
-            <ProfileInfo />
-            <MyPosts 
-                profile={props.profile} 
-                addPost={props.addPost}
-                onInputPostText={props.onInputPostText} />
+            <ProfileInfo {...props} updateStatus={props.updateStatus} />
+            <MyPostsContainer 
+                />
         </div>
     );
 }

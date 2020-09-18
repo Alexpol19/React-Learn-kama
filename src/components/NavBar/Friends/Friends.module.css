@@ -7,7 +7,6 @@
 }
 .friendsLinks{
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 10px;
 }
@@ -17,11 +16,13 @@
   flex-wrap: wrap;
   flex: 0 0 30%;
   max-width: 30%;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 .friend img{
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
 }
 .friend span{
   flex: 0 0 100%;
@@ -29,4 +30,7 @@
   text-align: center;
   text-transform: none;
   margin-top: 10px;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
 }
