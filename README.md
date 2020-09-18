@@ -8,10 +8,10 @@ Password: free
 
 ## Running on your localhost
 
-### To run on your localhost you need node.js v. v12.18.3, npm v. 6.14.6,
-### To use full api you need registrate on https://social-network.samuraijs.com/,
-### Take API Key from account settings,
-### And put in a file src>api>api.js instead of the inscription "Your API KEY"
+#### To run on your localhost you need node.js v. v12.18.3, npm v. 6.14.6,
+#### To use full api you need registrate on https://social-network.samuraijs.com/,
+#### Take API Key from account settings,
+#### And put in a file src>api>api.js
 
 In the project directory, you can run:
 
