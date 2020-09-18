@@ -4,7 +4,7 @@
 ### Test Login dates:
 
 Email: free@samuraijs.com
-Password: free
+Password: free -->
 
 ## Running on your localhost
 
