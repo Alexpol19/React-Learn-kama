@@ -1,4 +1,4 @@
-# Learn project Social Network Created with Create React App
+# Learn project Social Network using React/Redux and related libraries
 
 You can see the [demo](https://codesandbox.io/s/nifty-sammet-8ueun)
 ### Test Login dates:
