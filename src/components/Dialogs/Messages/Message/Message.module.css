@@ -3,14 +3,14 @@
     margin-top: 10px;
 }
 .message__left{
-    flex: 0 0 75px;
-    max-width: 75px;
+    flex: 0 0 40px;
+    max-width: 40px;
     text-align: center;
 }
 .message__left img{
     border-radius: 50%;
-    width: 75px;
-    height: 75px;
+    width: 40px;
+    height: 40px;
 }
 .message__left a{
     text-decoration: none;
@@ -22,25 +22,27 @@
     padding-left: 20px;
 }
 .message__right p{
-    padding: 20px 10px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin-top: 10px;
+    padding: 15px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 5px;
     position: relative;
+    z-index: 1;
 }
 .message__right p:before{
     content: '';
     top: 11px;
     left: -8px;
-    background-color: #fff;
+    background-color: rgb(241, 241, 241);
     width: 20px;
     height: 20px;
     transform: rotate(45deg);
     position: absolute;
+    z-index: 0;
 }
 
 .message.companion{
     justify-content: flex-end;
+    
 }
 .message.companion .message__left{
     order: 2;
@@ -49,6 +51,7 @@
     order: 1;
     padding-left: 0px;
     padding-right: 20px;
+    
 }
 .message.companion .message__right p:before{
     left: unset;

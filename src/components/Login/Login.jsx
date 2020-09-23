@@ -7,12 +7,12 @@ import { requiredField, minLength } from '../../utils/validators/validators';
 const minLength6 = minLength(6);
 const minLength10 = minLength(10);
 
-const Login = ({handleSubmit, error}) => {
+const Login = ({handleSubmit, error, captcha}) => {
     return (
         <div className={style.loginPage}>
             <h2>Login</h2>
             <form onSubmit={handleSubmit}>
-                <div>
+                <div className={style.loginField}>
                     <Field 
                         name="email" 
                         placeholder="Login" 
@@ -21,7 +21,7 @@ const Login = ({handleSubmit, error}) => {
                         label="Email"
                         type="email" />
                 </div>
-                <div>
+                <div className={style.loginField}>
                     <Field 
                         name="password" 
                         placeholder="Password" 
@@ -30,7 +30,7 @@ const Login = ({handleSubmit, error}) => {
                         label="Password"
                         type="text" />
                 </div>
-                <div>
+                <div className={style.checkbox}>
                     <Field 
                         name="remember" 
                         id="rememberMe" 
@@ -38,7 +38,21 @@ const Login = ({handleSubmit, error}) => {
                         component={Input}
                         type="checkbox" /> 
                 </div>
+                
+                {captcha 
+                    ?   <div>
+                            <img src={captcha} alt=""/>
+                            <Field 
+                                name="captcha" 
+                                placeholder="Captcha" 
+                                component={Input}
+                                validate={[requiredField]} 
+                                label="Captcha"
+                                type="text" />
+                        </div>
+                    :   <></>}
                 {error ? <div className={style.commonError}>{error}</div> : <></>}
+
                 <div>
                     <button>Login</button>
                 </div>

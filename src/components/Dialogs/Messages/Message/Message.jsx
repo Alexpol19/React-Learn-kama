@@ -14,7 +14,7 @@ const Message = (props) =>{
         <div className={style.message+' '+own}>
             <div className={style.message__left}>
                 <img src={props.url} />
-                <a href="#">{props.name}</a>
+                {/* <a href="#">{props.name}</a> */}
             </div>
             <div className={style.message__right}><p>{props.messageText}</p></div>
         </div>

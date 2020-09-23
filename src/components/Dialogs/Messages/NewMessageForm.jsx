@@ -10,10 +10,10 @@ const NewMessage = (props) => {
         <form onSubmit={props.handleSubmit}>
             <Field 
                 name="messageText" 
-                placeholder="Message" 
-                label="Enter message"
+                placeholder="Your message" 
+                // label="Enter message"
                 component={Input} 
-                validate={[requiredField, minLength10]}
+                // validate={[requiredField, minLength10]}
                 type='text' />
             <button>Send</button>
         </form>

@@ -1,16 +1,17 @@
 main nav{
-  flex: 0 0 25%;
-  max-width: 25%;
-  border-right: 3px solid #456;
+  flex: 0 0 15%;
+  max-width: 15%;
+  /* border-right: 3px solid #456; */
   
-  padding-right: 20px;
+  /* padding-right: 20px; */
   padding-bottom: 20px;
 }
 main nav a{
+  padding: 5px;
+  font-size: 14px;
   text-decoration: none;
   color: #456;
   font-weight: 600;
   text-transform: uppercase;
-  margin-top: 10px;
   transition: .3s
 }

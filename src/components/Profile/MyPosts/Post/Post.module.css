@@ -1,6 +1,8 @@
 .post {
     display: flex;
-    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-top: 1px solid  rgb(207, 207, 207);
     flex-wrap: wrap;
     align-items: center;
 }

@@ -1,4 +1,6 @@
+import { stopSubmit } from "redux-form";
 import { profileAPI } from "../api/api";
+import { setErrorAsync } from "./appReducer";
 
 const initialState = {
     userStatus : '',
@@ -17,7 +19,7 @@ const initialState = {
             description: 'Hello Peoples',
             url: 'https://resheto.net/images/mater/kartinka_motivatsiya_tsitata_9.jpg'
         },
-    ]
+    ],
 };
 
 const profileReducer = (state = initialState, action) => {
@@ -56,6 +58,11 @@ const profileReducer = (state = initialState, action) => {
                 ...state,
                 userStatus: action.status,
             }
+        case SetPhoto:
+            let newState = {...state}
+            newState.userData = {...state.userData};
+            newState.userData.photos = {...action.photos}
+            return newState;
         default: 
             return state;
     }
@@ -65,6 +72,7 @@ const AddPost = 'AddPost';
 const DeletePost = 'AddPost';
 const SetUserData = 'SetUserData';
 const SetStatus = 'SetStatus';
+const SetPhoto = 'SetPhoto';
 
 
 export const addPostActionCreator = (text) => {
@@ -78,6 +86,9 @@ export const setUserData = (userData) => {
 }
 export const setStatus = (status) => {
     return { type: SetStatus, status}
+}
+export const setPhoto = (photos) => {
+    return { type: SetPhoto, photos}
 }
 
 
@@ -106,8 +117,42 @@ export const updateStatusThunkCreator = (newStatus) => (dispatch) => {
             dispatch(setStatus(newStatus));
         }
     })
-    .catch( (err) => {
-        console.log(err);
-    });
+    
+    
+}
+export const savePhoto = (photo) => async (dispatch) => {
+    try{
+        let data = await profileAPI.savePhoto(photo);
+        if(data.resultCode == 0){
+            dispatch(setPhoto(data.data.photos))
+        }
+    }
+    catch(error){
+        var el = error.message;
+        var numEl = parseInt(el.match(/\d+/));
+        let errorText = "Something wrong";
+        if(numEl == 429){
+            errorText = "Too many requests. Wait 1 hour"
+        }
+        else if(numEl == 403){
+            errorText = "Something wrong with your account settings. "
+        }
+        dispatch(setErrorAsync(errorText))
+    }
+    
+}
+
+export const saveDetails = (details, userId) => async (dispatch) => {
+    let data = await profileAPI.saveDetails(details);
+    if(data.resultCode == 0){
+        dispatch(getProfileThunkCreator(userId))
+    }
+    else{
+        console.log(data.messages)
+        let message = data.messages.length > 0 ? data.messages : "Some error!"
+        let action = stopSubmit("profileDetails", { _error: message,})
+        dispatch(action);
+    }
+    return data.resultCode
 }
 export default profileReducer;

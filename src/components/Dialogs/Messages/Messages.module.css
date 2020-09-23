@@ -1,27 +1,46 @@
 .messages{
-    flex: 0 0 calc(100% - 100px);
-    max-width: calc(100% - 100px);
-    padding-left: 30px;
+    flex: 0 0 calc(100% - 230px);
+    max-width: calc(100% - 230px);
+    margin-left: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.dialogTo{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgb(241, 241, 241);
+    padding: 20px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.allMessages{
+    padding: 20px;
+}
+.newMessage{
+    background-color: rgb(241, 241, 241);
+    padding: 20px;
+    padding-top: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .newMessage form{
-    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.newMessage label{
+    width: 0;
+}
 .newMessage input{
-    flex: 0 0 calc(100% - 100px);
-    max-width: calc(100% - 100px);
-    border: 1px solid rgb(71, 71, 71, 0.5);
-    background-color: rgb(233, 233, 233);
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 18px;
-    box-sizing: border-box;
+    width: 100%;
+    background-color: #fff;
+    padding: 5px 15px;
 }
 .newMessage button{
-    flex: 0 0 83px;
-    max-width: 83px;
+    margin-top: 20px;
+    width: 20%;
+    /* flex: 0 0 83px; */
+    /* max-width: 83px; */
     background-color: rgb(53, 130, 207);
     padding: 5px 20px;
     border: none;

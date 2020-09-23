@@ -1,5 +1,6 @@
 .appWrapper{
   background: rgb(221, 221, 221);
+  min-height: 100vh;
 }
 main{
   display: flex;
@@ -7,7 +8,18 @@ main{
   margin-top: 20px!important;
 }
 main .content {
-  flex: 0 0 73%;
-  max-width: 73%;
-  padding-left: 30px;
+  flex: 0 0 85%;
+  max-width: 85%;
+}
+.errorModal{
+  position: absolute;
+  top: 19px;
+  right: 40px;
+  width: 200px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  padding-bottom: 15px;
+  box-shadow: 0px 0px 2px rgb(99, 93, 93);
+  z-index: 10;
 }

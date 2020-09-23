@@ -13,9 +13,9 @@ const NewPost = (props) => {
                 name="postText" 
                 placeholder="New post" 
                 component={Input} 
-                label="Enter Text"
+                // label="Enter Text"
                 type="text" 
-                validate={[requiredField, minLength7]}
+                // validate={[requiredField, minLength7]}
             />
             <button>Add Post</button>
         </form>

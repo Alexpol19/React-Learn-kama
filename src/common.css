@@ -3,10 +3,6 @@ h2, h3, p{
   margin-top: 0;
   margin-bottom: 0;
 }
-.containerFluid{
-  width: 100%;
-}
-.container{
-  width: 50%;
-  margin: 0 auto;
+.pagination{
+  justify-content: center;
 }

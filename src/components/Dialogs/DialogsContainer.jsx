@@ -8,6 +8,7 @@ import { compose } from 'redux';
 const DialogsElements = (props) => {
     return(
         <div className={style.dialogs__items}>
+            <h6>All dialogs</h6>
             {
                 props.dialogs
                     .map( dialog => <Dialog id={dialog.id} key={dialog.id} name={dialog.name} /> )

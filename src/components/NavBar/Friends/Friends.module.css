@@ -14,10 +14,11 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  flex: 0 0 30%;
-  max-width: 30%;
+  flex: 0 0 32%;
+  max-width: 32%;
   margin-left: 1px;
   margin-right: 1px;
+  padding: 0;
 }
 .friend img{
   border-radius: 50%;

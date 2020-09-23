@@ -1,24 +1,45 @@
+.profile{
+    background-color: rgb(240, 240, 240);
+  border-radius: 5px;
+  padding: 10px;
+}
 .author {
     display: flex;
     align-items: flex-start;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     flex-wrap: wrap;
 }
 
 .author img {
     border-radius: 50%;
+    width: 90px;
 }
 
 .author__details {
-    margin-left: 30px;
+    /* padding-left: 30px; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
-
+.mainInfo{
+    flex: 0 0 300px;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+}
+.mainInfo img{
+    margin-right: 10px;
+}
 .author__details p {
     margin-top: 10px;
 }
 
-.status{
-
+.status .statusLabel{
+    display: inline-block;
+    width: 15%;
+    font-weight: 600;
 }
 .status__input{
     background: transparent;
@@ -27,4 +48,40 @@
 }
 .status__input:focus{
     outline: none;
+}
+
+.information{
+    flex: 0 0 calc(100% - 300px);
+    max-width: calc(100% - 300px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.information p{
+    margin-top: 0;
+    line-height: 1.5;
+}
+.info{
+    display: flex;
+    width: 83%;
+    justify-content: space-between;
+}
+.info .item{
+    width: 49%;
+}
+.editInfo{
+    width: 15%;
+}
+.editMainInfo{
+    width: 100%;
+}
+.detailsEdit{
+    width: 100%;
+}
+.detailsEdit label,
+.socialsTitle{
+    font-weight: 600;
+}
+.socialsTitle{
+    font-size: 20px;
 }

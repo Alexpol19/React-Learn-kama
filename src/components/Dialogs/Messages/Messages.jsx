@@ -6,10 +6,13 @@ import NewMessageForm from './NewMessageForm';
 const Messages = (props) =>{
     return (
         <div className={style.messages}>
-            {
-                props.dialog.messagesData
-                    .map( message => <Message id={message.id} key={message.id} name={message.name} messageText={message.messageText} url={message.url} own={message.own} /> )
-            }
+            <div className={style.dialogTo}>Conversation with <b>Vasea</b></div>
+            <div className={style.allMessages}>
+                {
+                    props.dialog.messagesData
+                        .map( message => <Message id={message.id} key={message.id} name={message.name} messageText={message.messageText} url={message.url} own={message.own} /> )
+                }
+            </div>
             <div className={style.newMessage}>
                 <NewMessageForm onSubmit={props.sendMessage} />
             </div>

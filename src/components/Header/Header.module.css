@@ -12,8 +12,12 @@ header {
 }
 
 header img {
-    height: 70px;
-    width: 70px;
+    height: 51px;
+    background-size: cover;
+}
+.userTop{
+    display: flex;
+    align-items: center;
 }
 header .login{
     margin-top: 15px;
@@ -25,8 +29,17 @@ header .login{
     border-radius: 15px;
     text-decoration: none;
 }
+header .userLink{
+    margin-right: 10px;
+}
+header .userLink img{
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+}
 header .userName{
     margin-right: 5px;
     color: #fff;
     letter-spacing: 1px;
+    text-transform: capitalize;
 }

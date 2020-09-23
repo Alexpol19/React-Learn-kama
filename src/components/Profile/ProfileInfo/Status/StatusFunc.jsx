@@ -34,7 +34,7 @@ const StatusFunc = (props) => {
     // }
     return (
         <p className={style.status}>
-            <span>Status: </span>
+            <span className={style.statusLabel}>Status: </span>
             {editMode 
             ? <input type="text" className={style.status__input} autoFocus={true} onBlur={hideInput} onChange={(e) => inputStatus(e)} value={status} /> 
             : <span onClick={showInput}>{props.status}</span>}

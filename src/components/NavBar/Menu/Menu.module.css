@@ -3,12 +3,14 @@
   flex-direction: column;
 }
 .menu a.active{
-  color: burlywood;
+  background-color: rgba(167, 167, 167, 0.432);
 }
 .menu a.activeMessages{
   color: rgb(74, 202, 24);
 }
 .menu a:hover{
-  color: rgb(135, 185, 77);
+  text-decoration: none;
+  background-color: rgba(167, 167, 167, 0.432);
+  color: #456;
   transition: .3s
 }

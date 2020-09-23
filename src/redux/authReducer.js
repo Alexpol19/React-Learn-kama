@@ -6,6 +6,7 @@ const inintialState = {
     email: null,
     login: null,
     isAuth: false,
+    captcha: null,
 }
 
 const authReducer = (state = inintialState, action) => {
@@ -15,6 +16,12 @@ const authReducer = (state = inintialState, action) => {
                 ...state,
                 ...action.data            }
         }
+        case SetCaptcha: {
+            return {
+                ...state,
+                captcha: action.captcha
+            }
+        }
 
         default:
             return state;
@@ -22,7 +29,8 @@ const authReducer = (state = inintialState, action) => {
 }
 
 // types
-const SetAuthData = 'setAuthData'
+const SetAuthData = 'setAuthData';
+const SetCaptcha = 'setCaptcha';
 
 // actionCreators
 export const setAuthData = (id, email, login, auth) => {
@@ -34,6 +42,11 @@ export const setAuthData = (id, email, login, auth) => {
             login, 
             isAuth: auth,
         }
+    }
+}
+const setCaptcha = (captcha) => {
+    return {
+        type: SetCaptcha, captcha
     }
 }
 
@@ -53,18 +66,28 @@ export const isAuthFetch = () => (dispatch) => {
     })
 }
 export const login = (loginData) => (dispatch) => {
+    dispatch(setCaptcha(null))
     authAPI.login(loginData)
     .then((data) => {
         if(data.resultCode === 0){
             dispatch(isAuthFetch())
-        } else {
+        }
+        else {
+            console.log(data.messages)
             let message = data.messages.length > 0 ? data.messages : "Some error!"
             let action = stopSubmit("login", { _error: message,})
             dispatch(action);
+            if (data.resultCode === 10){
+                authAPI.captcha()
+                .then((url) => {
+                    dispatch(setCaptcha(url))
+                })
+            }
         }
     })
 }
 export const logout = () => (dispatch) => {
+    dispatch(setCaptcha(null))
     authAPI.logout()
     .then((data) => {
         if(data.resultCode === 0){

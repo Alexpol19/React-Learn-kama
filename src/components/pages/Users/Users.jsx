@@ -21,6 +21,7 @@ let Users = (props) => {
                         height={100}
                         width={100}
                         timeout={0} 
+                        
                 
                     />
                     :
@@ -39,8 +40,10 @@ let Users = (props) => {
                 pageRangeDisplayed={5}
                 onChange={updateCurrentPage}
                 // custom classes
-                innerClass={style.pagination}
-                activeClass={style.active}
+                // innerClass={style.pagination}
+                // activeClass={style.active}
+                itemClass="page-item"
+                linkClass="page-link"
             />
 
     </div>

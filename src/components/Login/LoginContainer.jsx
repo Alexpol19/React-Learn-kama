@@ -16,7 +16,7 @@ class LoginContainer extends React.Component {
             }
             else{
                 return (
-                    <LoginForm onSubmit={this.onSubmit} />
+                    <LoginForm captcha={this.props.captcha} onSubmit={this.onSubmit} />
                 )
             }
         }
@@ -26,7 +26,8 @@ class LoginContainer extends React.Component {
 
 let mapStateToProps = (state) => {
     return {
-        isAuth: state.auth.isAuth
+        isAuth: state.auth.isAuth,
+        captcha: state.auth.captcha
     }
 }
 
